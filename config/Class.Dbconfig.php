@@ -4,7 +4,7 @@ class Database
     private $user;
     private $host;
     private $pass;
-    private $dbname;
+    public $dbname;
     private $port;
     public $connect;
 
@@ -23,7 +23,7 @@ class Database
 
         $this->connect = $dbHandle;
 
-        return $this->connect;
+        return $this;
 
     }
     
